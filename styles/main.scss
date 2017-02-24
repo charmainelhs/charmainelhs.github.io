@@ -16,6 +16,8 @@ $base-line-height: 1.5;
 
 html {
   font-family: $base-font-family;
+  -webkit-text-size-adjust: none;
+
 }
 
 .small-title {
@@ -126,6 +128,6 @@ img {
 
 @media (min-width: 1000px) {
   #page {
-    max-width: 45em;
+    max-width: 36em;
   }
 }
