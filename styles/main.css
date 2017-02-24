@@ -36,7 +36,8 @@ table {
   border-spacing: 0; }
 
 html {
-  font-family: "Source Sans Pro", Helvetica, sans-serif; }
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  -webkit-text-size-adjust: none; }
 
 .small-title {
   font-size: 1em;
@@ -49,13 +50,14 @@ html {
   border-bottom: 4px solid #FBD133; }
 
 .separator {
-  border-bottom: 1px solid #e0e0e0; }
+  margin: 3em 0 0;
+  border-bottom: 1px solid #c7c7c7; }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
   color: #0068D6;
-  margin-bottom: 2em; }
+  margin-bottom: 1.25em; }
 
 h3 {
   font-size: 1.75em;
@@ -69,10 +71,10 @@ p {
   color: #6A6A6C;
   margin-bottom: 1em; }
 
-a, a:visited {
+a {
   text-decoration: none;
   color: #0068D6; }
-  a a:hover, a:visited a:hover {
+  a :hover {
     text-decoration: underline; }
 
 img {
@@ -84,26 +86,33 @@ img {
   padding: 0 2em;
   margin: 0 auto; }
 
-#cta {
-  width: 100%;
-  margin: 4em 0;
+#nav {
   display: flex;
-  font-size: 1em; }
-  #cta a {
-    flex-grow: 1;
+  justify-content: space-between;
+  align-items: baseline; }
+  #nav .cta-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
+    color: #c7c7c7; }
+  #nav h1 {
+    display: inline-block; }
+
+#cta {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0; }
+  #cta img {
+    width: 32px;
     margin: auto;
-    display: flex; }
-    #cta a .cta-link {
-      text-decoration: none;
-      display: block;
-      margin: 8px 0; }
-    #cta a img {
-      width: 32px;
-      margin-right: 8px; }
-    #cta a span {
-      display: inline-flex;
-      align-items: center;
-      color: #6A6A6C; }
+    display: block;
+    order: 1;
+    margin-bottom: 1em; }
+  #cta p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    order: 2; }
 
 .project {
   margin: 4em 0; }
@@ -116,6 +125,12 @@ img {
     .project .project-info img {
       width: 16px;
       margin-right: 8px; }
+
+#copyright {
+  margin: 1em 0;
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 1em; }
 
 @media (min-width: 1000px) {
   #page {

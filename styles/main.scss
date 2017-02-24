@@ -4,7 +4,7 @@
 $super-dark-gray: #242424;
 $dark-gray: #6A6A6C;
 $light-gray: #ABABAB;
-$super-light-gray: #e0e0e0;
+$super-light-gray: #c7c7c7;
 $blue: #0068D6;
 $green: #16C424;
 $yellow: #FBD133;
@@ -33,6 +33,7 @@ html {
 }
 
 .separator {
+  margin: 3em 0 0;
   border-bottom: 1px solid $super-light-gray;
 }
 
@@ -40,7 +41,7 @@ h2 {
   font-size: 2.25em;
   font-weight: 700;
   color: $blue;
-  margin-bottom: 2em;
+  margin-bottom: 1.25em;
 }
 
 h3 {
@@ -57,11 +58,11 @@ p {
   margin-bottom: 1em;
 }
 
-a, a:visited {
+a {
   text-decoration: none;
   color: $blue;
 
-  a:hover {
+  :hover {
     text-decoration: underline;
   }
 }
@@ -78,36 +79,44 @@ img {
   margin: 0 auto;
 }
 
-#cta {
-  width: 100%;
-  margin: 4em 0;
+#nav {
   display: flex;
-  font-size: 1em;
+  justify-content: space-between;
+  align-items:baseline;
 
-  a {
-      flex-grow: 1;
-      margin: auto;
-      display: flex;
+  .cta-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
+    color: $super-light-gray;
+  }
 
-      .cta-link {
-        text-decoration: none;
-        display: block;
-        margin: 8px 0;
-      }
-
-      img {
-        width: 32px;
-        margin-right: 8px;
-      }
-
-      span {
-        display: inline-flex;
-        align-items: center;
-        color: $dark-gray;
-
-      }
+  h1 {
+    display: inline-block;
   }
 }
+
+#cta {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+
+  img {
+    width: 32px;
+    margin: auto;
+    display: block;
+    order: 1;
+    margin-bottom: 1em;
+  }
+
+  p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    order: 2;
+  }
+}
+
 
 .project {
   margin: 4em 0;
@@ -124,6 +133,16 @@ img {
       margin-right: 8px;
     }
   }
+}
+
+
+
+
+#copyright {
+  margin: 1em 0;
+  text-align: center;
+  color: $super-light-gray;
+  font-size: 1em;
 }
 
 @media (min-width: 1000px) {
