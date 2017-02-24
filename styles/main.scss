@@ -11,23 +11,23 @@ $yellow: #FBD133;
 
 // Base Font
 $base-font-family: 'Source Sans Pro', Helvetica, sans-serif;
-$base-font-size: 20px;
-$base-line-height: 32px;
+$base-font-size: 16px;
+$base-line-height: 1.5;
 
 html {
   font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 .small-title {
-  font-size: 16px;
-  margin: 24px 0 64px;
+  font-size: 1em;
+  margin: 4em 0 4em;
   color: $light-gray;
-  font-weight: 700px;
+  font-weight: 700;
   letter-spacing: 0.1em;
 }
 
 .yellow-underline {
-  display: inline-block;
   border-bottom: 4px solid $yellow;
 }
 
@@ -36,24 +36,24 @@ html {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: 700;
   color: $blue;
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 700;
   color: $super-dark-gray;
-  margin: 24px 0;
+  margin: 1.5em 0;
 }
 
 p {
-  font-size: $base-font-size;
+  font-size: 1.25em;
   line-height: $base-line-height;
   color: $dark-gray;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 
 a, a:visited {
@@ -70,27 +70,20 @@ img {
   height: auto;
 }
 
-hr {
-  color: $dark-gray;
-  margin: 8px 0 48px;
-}
-
 /* Containers */
 
 #page {
-  max-width: 600px;
-  min-width: 320px;
-  padding: 16px;
+  padding: 0 2em;
   margin: 0 auto;
 }
 
 #cta {
   width: 100%;
-  margin: 64px 0;
+  margin: 4em 0;
   display: flex;
+  font-size: 1em;
 
   a {
-
       flex-grow: 1;
       margin: auto;
       display: flex;
@@ -109,25 +102,31 @@ hr {
       span {
         display: inline-flex;
         align-items: center;
-         color: $dark-gray;
+        color: $dark-gray;
 
       }
   }
 }
 
 .project {
-  margin: 64px 0;
+  margin: 4em 0;
 
   .project-info {
-    font-size: 12px;
+    font-size: 1em;
     color: $dark-gray;
     display: inline-flex;
     align-items: center;
-    margin: 24px 24px 24px 0;
+    margin: 1.5em 1.5em 1.5em 0;
 
     img {
       width: 16px; 
       margin-right: 8px;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  #page {
+    max-width: 45em;
   }
 }
