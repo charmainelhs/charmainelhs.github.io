@@ -1,0 +1,133 @@
+@import "reset";
+
+// Colours
+$super-dark-gray: #242424;
+$dark-gray: #6A6A6C;
+$light-gray: #ABABAB;
+$super-light-gray: #e0e0e0;
+$blue: #0068D6;
+$green: #16C424;
+$yellow: #FBD133;
+
+// Base Font
+$base-font-family: 'Source Sans Pro', Helvetica, sans-serif;
+$base-font-size: 20px;
+$base-line-height: 32px;
+
+html {
+  font-family: $base-font-family;
+}
+
+.small-title {
+  font-size: 16px;
+  margin: 24px 0 64px;
+  color: $light-gray;
+  font-weight: 700px;
+  letter-spacing: 0.1em;
+}
+
+.yellow-underline {
+  display: inline-block;
+  border-bottom: 4px solid $yellow;
+}
+
+.separator {
+  border-bottom: 1px solid $super-light-gray;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: $blue;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: $super-dark-gray;
+  margin: 24px 0;
+}
+
+p {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $dark-gray;
+  margin-bottom: 16px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $blue;
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  color: $dark-gray;
+  margin: 8px 0 48px;
+}
+
+/* Containers */
+
+#page {
+  max-width: 600px;
+  min-width: 320px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+#cta {
+  width: 100%;
+  margin: 64px 0;
+  display: flex;
+
+  a {
+
+      flex-grow: 1;
+      margin: auto;
+      display: flex;
+
+      .cta-link {
+        text-decoration: none;
+        display: block;
+        margin: 8px 0;
+      }
+
+      img {
+        width: 32px;
+        margin-right: 8px;
+      }
+
+      span {
+        display: inline-flex;
+        align-items: center;
+         color: $dark-gray;
+
+      }
+  }
+}
+
+.project {
+  margin: 64px 0;
+
+  .project-info {
+    font-size: 12px;
+    color: $dark-gray;
+    display: inline-flex;
+    align-items: center;
+    margin: 24px 24px 24px 0;
+
+    img {
+      width: 16px; 
+      margin-right: 8px;
+    }
+  }
+}

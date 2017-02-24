@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: "Source Sans Pro", Helvetica, sans-serif; }
+
+.small-title {
+  font-size: 16px;
+  margin: 24px 0 64px;
+  color: #ABABAB;
+  font-weight: 700px;
+  letter-spacing: 0.1em; }
+
+.yellow-underline {
+  display: inline-block;
+  border-bottom: 4px solid #FBD133; }
+
+.separator {
+  border-bottom: 1px solid #e0e0e0; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0068D6;
+  margin-bottom: 40px; }
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #242424;
+  margin: 24px 0; }
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #6A6A6C;
+  margin-bottom: 16px; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #0068D6; }
+  a a:hover, a:visited a:hover {
+    text-decoration: underline; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+hr {
+  color: #6A6A6C;
+  margin: 8px 0 48px; }
+
+/* Containers */
+#page {
+  max-width: 600px;
+  min-width: 320px;
+  padding: 16px;
+  margin: 0 auto; }
+
+#cta {
+  width: 100%;
+  margin: 64px 0;
+  display: flex; }
+  #cta a {
+    flex-grow: 1;
+    margin: auto;
+    display: flex; }
+    #cta a .cta-link {
+      text-decoration: none;
+      display: block;
+      margin: 8px 0; }
+    #cta a img {
+      width: 32px;
+      margin-right: 8px; }
+    #cta a span {
+      display: inline-flex;
+      align-items: center;
+      color: #6A6A6C; }
+
+.project {
+  margin: 64px 0; }
+  .project .project-info {
+    font-size: 12px;
+    color: #6A6A6C;
+    display: inline-flex;
+    align-items: center;
+    margin: 24px 24px 24px 0; }
+    .project .project-info img {
+      width: 16px;
+      margin-right: 8px; }
+
+/*# sourceMappingURL=main.css.map */
