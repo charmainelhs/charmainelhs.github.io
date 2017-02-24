@@ -101,7 +101,7 @@ img {
 #cta {
   display: flex;
   flex-direction: column;
-  margin: 2em 0; }
+  margin: 4em 0; }
   #cta img {
     width: 32px;
     margin: auto;
@@ -114,6 +114,12 @@ img {
     text-align: center;
     order: 2; }
 
+#copyright {
+  margin: 1em 0;
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 1em; }
+
 .project {
   margin: 4em 0; }
   .project .project-info {
@@ -125,12 +131,6 @@ img {
     .project .project-info img {
       width: 16px;
       margin-right: 8px; }
-
-#copyright {
-  margin: 1em 0;
-  text-align: center;
-  color: #c7c7c7;
-  font-size: 1em; }
 
 @media (min-width: 1000px) {
   #page {
