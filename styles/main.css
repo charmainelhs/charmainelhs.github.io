@@ -36,15 +36,14 @@ table {
   border-spacing: 0; }
 
 html {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: 'Lora', serif;
   -webkit-text-size-adjust: none; }
 
 .small-title {
   font-size: 1em;
   margin: 4em 0 4em;
   color: #ABABAB;
-  font-weight: 700;
-  letter-spacing: 0.1em; }
+  font-weight: 700; }
 
 .yellow-underline {
   border-bottom: 4px solid #FBD133; }
@@ -66,9 +65,9 @@ h3 {
   margin: 1.5em 0; }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.4em;
   line-height: 1.5;
-  color: #6A6A6C;
+  color: #222222;
   margin-bottom: 1em; }
 
 a {
@@ -113,6 +112,10 @@ img {
     margin: auto;
     text-align: center;
     order: 2; }
+
+#intro {
+  text-align: center;
+}
 
 #copyright {
   margin: 1em 0;
